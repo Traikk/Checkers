@@ -1,0 +1,19 @@
+further down the road:
+    - determine how pieces beat others
+
+ideas for later:
+    introduce a start screen
+    introduce a end screen with ... player won
+
+    introduce ai with different difficulty levels(dont even try until you made everything else)
+
+
+Refactoring:
+    - SelectTileListener.handleMovement and SelectTileListener.handleSelection are
+      pretty unreadable.
+    - Remove SelectTileListener.checkIfMoveIsLegal duplicate if statements.
+
+Lines of code tracker:
+    20.3 eveing: 446
+    21.3 evening: 532
+    22.3 evening: 641

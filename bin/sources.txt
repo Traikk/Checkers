@@ -1,0 +1,10 @@
+D:\Programming\java\Checkers\bin\Checkers.class
+D:\Programming\java\Checkers\bin\core\Board.class
+D:\Programming\java\Checkers\bin\core\Constants.class
+D:\Programming\java\Checkers\bin\core\Game$DrawingVariables.class
+D:\Programming\java\Checkers\bin\core\Game.class
+D:\Programming\java\Checkers\bin\core\GameCanvas.class
+D:\Programming\java\Checkers\bin\core\MouseListenerFrame.class
+D:\Programming\java\Checkers\bin\core\Piece.class
+D:\Programming\java\Checkers\bin\core\Renderer.class
+D:\Programming\java\Checkers\bin\core\SelectTileListener.class
