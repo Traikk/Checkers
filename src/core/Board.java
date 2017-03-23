@@ -19,6 +19,7 @@ public class Board
         }
     }
 
+
     // set state to default position player 1 will be represented as '1' and
     // player to with '2'
     public void setToStartingPosition() {
@@ -39,6 +40,7 @@ public class Board
 
     }
 
+
     // returns state char at x and y position
     public Piece getPieceAt(int x, int y) {
         Piece a;
@@ -50,15 +52,18 @@ public class Board
         return a;
     }
 
+
     // sets piece in state at coorinates
     public void setPieceAt(int x, int y, Piece p) {
         state[x][y] = p;
     }
 
+
     // because our board a square we only need to return the number of rows
     public int getSize() {
         return state.length;
     }
+
 
     // sets the selection status of a given piece at coordinates in state
     public void setSelectionStatusAt(int x, int y, boolean to) {
@@ -67,6 +72,7 @@ public class Board
             a.changeSelectionStatus();
         }
     }
+
 
     // returns selection status at coordinates in state
     public boolean getSelectionStatus(int x, int y) {

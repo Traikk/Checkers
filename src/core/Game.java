@@ -217,6 +217,11 @@ class SelectTileListener implements MouseListener
                 board.setPieceAt(currentSelectedPiece[0], currentSelectedPiece[1], new Piece(0));
                 // clearSelectionStatus(board);
 
+                if(game.checkIfSomeoneWon(board)) {
+                    System.out.println("Player " + game.getCurrentPlayer() + " Won");
+                    game.updateCanvas();
+                }
+
                 game.updateCurrentPlayer();
             } else if(checkIfJumpIsLegal(currentSelectedPiece, boardCoords) && checkIfPieceHasCurrentOwner(boardCoords[0], boardCoords[1]) == false) {
 
@@ -224,15 +229,15 @@ class SelectTileListener implements MouseListener
                 board.setPieceAt(currentSelectedPiece[0] + ((boardCoords[0] - currentSelectedPiece[0]) / 2), currentSelectedPiece[1] + ((boardCoords[1] - currentSelectedPiece[1]) / 2), new Piece(0));
                 board.setPieceAt(currentSelectedPiece[0], currentSelectedPiece[1], new Piece(0));
 
+                if(game.checkIfSomeoneWon(board)) {
+                    System.out.println("Player " + game.getCurrentPlayer() + " Won");
+                    game.updateCanvas();
+                }
 
                 game.updateCurrentPlayer();
 
             }
 
-            if(game.checkIfSomeoneWon(board)) {
-                System.out.println("Player " + game.getCurrentPlayer() + " Won");
-                game.updateCanvas();
-            }
 
         }
     }
